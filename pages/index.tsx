@@ -1,3 +1,5 @@
+import  BlogCards from '@/components/BlogCards';
+import ProjectCards from '@/components/ProjectCards';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
@@ -33,8 +35,77 @@ function Home() {
           </Link>
         </div>
       </article>
+      <div>
+        <Image
+          width={400}
+          height={550}
+          src={"/assets/images/hero-image.png"}
+          alt="Jan Humphrey Salangsang"></Image>
+      </div>
     </section>
     {/* END HERO SECTION */}
+
+    {/* RECENT PROJECTS */}
+    <section>
+      <div>
+        <h2>Recent Projects</h2>
+        <Link href="/projects">
+          
+            View All
+          
+        </Link>
+      </div>
+      <div>
+        <ProjectCards
+          imageURL="/assets/images/projects/jokesapimockup.png"
+          title="JokesAPI Mobile App"
+          description="A mobile app that allows you to get random jokes from the internet."
+          url="https://github.com/edmer664/JokesAPI"
+        />
+        <ProjectCards
+          imageURL="/assets/images/projects/jokesapimockup.png"
+          title="JokesAPI Mobile App"
+          description="A mobile app that allows you to get random jokes from the internet."
+          url="https://github.com/edmer664/JokesAPI"
+        />
+        <ProjectCards
+          imageURL="/assets/images/projects/jokesapimockup.png"
+          title="JokesAPI Mobile App"
+          description="A mobile app that allows you to get random jokes from the internet."
+          url="https://github.com/edmer664/JokesAPI"
+        />
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Blog Post</h2>
+        <Link href="/blogs">
+          
+            View All
+          
+        </Link>
+      </div>
+      <div>
+        <BlogCards
+          imageURL="/assets/images/projects/jokesapimockup.png"
+          title="JokesAPI Mobile App"
+          description="A mobile app that allows you to get random jokes from the internet."
+          url="https://github.com/edmer664/JokesAPI"
+        />
+        <BlogCards
+          imageURL="/assets/images/projects/jokesapimockup.png"
+          title="JokesAPI Mobile App"
+          description="A mobile app that allows you to get random jokes from the internet."
+          url="https://github.com/edmer664/JokesAPI"
+        />
+        <BlogCards
+          imageURL="/assets/images/projects/jokesapimockup.png"
+          title="JokesAPI Mobile App"
+          description="A mobile app that allows you to get random jokes from the internet."
+          url="https://github.com/edmer664/JokesAPI"
+        />
+      </div>
+    </section>
   </>;
 };
 
