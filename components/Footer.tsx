@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Link from "next/link";
 import {
   AiFillLinkedin,
@@ -71,6 +72,10 @@ function Footer() {
       </div>
     </>
   )
+=======
+function Footer(){
+  return
+>>>>>>> parent of 73ad78e (Added footer markup done with data)
 }
 
 export default Footer
