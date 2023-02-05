@@ -1,8 +1,12 @@
+import Head from "next/head"
 import Image from "next/image"
 
 function Projects() {
   return (
     <>
+    <Head>
+      <title>Jan Humphrey - Projects</title>
+    </Head>
       <section>
         <h1>Projects</h1>
         <article>
