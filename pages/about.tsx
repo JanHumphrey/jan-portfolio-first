@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Image from "next/image"
 
 function About() {
   return (
@@ -13,6 +14,11 @@ function About() {
         <article>
           <h2>Hi! I'm a full-stack developer with a specialty in design and user experience solutions. Let's work together and elevate your project.
           </h2>
+          <Image
+          width={400}
+          height={550}
+          src={"/assets/images/hero-about.png"}
+          alt="Jan Humphrey Salangsang"></Image>
         </article>
         
         <div>
