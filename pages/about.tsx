@@ -14,6 +14,7 @@ function About() {
           <h2>Hi! I'm a full-stack developer with a specialty in design and user experience solutions. Let's work together and elevate your project.
           </h2>
         </article>
+        
         <div>
           {/* CTA'S */}
           <div>
