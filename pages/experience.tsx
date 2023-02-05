@@ -17,7 +17,7 @@ function Experience() {
             width={400}
             height={550}
             src={"/assets/images/hero-exp.png"}
-            alt="Jan Humphrey Salangsang"></Image>
+            alt="Jan Humphrey Salangsang"/>
         </article>
         <div>
           <div>

@@ -16,7 +16,7 @@ function Projects() {
           width={400}
           height={550}
           src={"/assets/images/hero-projects.png"}
-          alt="Jan Humphrey Salangsang"></Image>
+          alt="Jan Humphrey Salangsang"/>
         </article>
         <div>
           <div>

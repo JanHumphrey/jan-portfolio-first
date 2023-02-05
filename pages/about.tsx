@@ -18,7 +18,7 @@ function About() {
           width={400}
           height={550}
           src={"/assets/images/hero-about.png"}
-          alt="Jan Humphrey Salangsang"></Image>
+          alt="Jan Humphrey Salangsang"/>
         </article>
         
         <div>

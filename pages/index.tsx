@@ -40,7 +40,7 @@ function Home() {
           width={400}
           height={550}
           src={"/assets/images/hero-image.png"}
-          alt="Jan Humphrey Salangsang"></Image>
+          alt="Jan Humphrey Salangsang"/>
       </div>
     </section>
     {/* END HERO SECTION */}
