@@ -34,34 +34,47 @@ function About() {
                 </a>
               </div>
               <div>
-                <a href="https://www.facebook.com/JnHmphry/">
+                <a href="https://twitter.com/JnHmphry/">
                   <div>→</div>
                   <p>Twitter</p>
                 </a>
               </div>
               <div>
-                <a href="https://www.facebook.com/JnHmphry/">
+                <a href="https://github.com/JanHumphrey">
                   <div>→</div>
                   <p>Github</p>
                 </a>
               </div>
               <div>
-                <a href="https://www.facebook.com/JnHmphry/">
+                <a href="https://www.linkedin.com/in/janhumphrey/">
                   <div>→</div>
                   <p>LinkedIn</p>
                 </a>
               </div>
               <div>
-                <a href="https://www.facebook.com/JnHmphry/">
+                <a href="https://www.instagram.com/jnhmphry/">
                   <div>→</div>
                   <p>Instagram</p>
                 </a>
               </div>
             </div>
           </div>
+
           {/* INTRODUCTORY  */}
           <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minus adipisci quaerat excepturi cupiditate dolor dignissimos saepe provident, labore iusto beatae, porro sint aspernatur accusamus. Voluptas recusandae harum quam ratione.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora corrupti cupiditate adipisci vero quas laborum vel, ratione neque possimus id quaerat repellendus facere eius error aspernatur, asperiores recusandae magni placeat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odit rem placeat veritatis neque ipsam repellendus, aut eius. Quibusdam consequuntur natus ipsam sit illo obcaecati officiis quisquam fugiat. Iure, dicta.</p>
+            <h1>Technology Stack</h1>
+            {/* STACK COMPONENTS HERE */}
+            <div>
 
+            </div>
+            <h1>Recommendations</h1>
+            {/* RECOMMENDATIONS COMPONENTS HERE */}
+            <div>
+
+            </div>
           </div>
         </div>
       </section>
