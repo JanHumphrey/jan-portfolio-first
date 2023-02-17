@@ -9,8 +9,8 @@ import {
 
 const SocialLink = ({ icon, url }: { icon: React.ReactNode; url: string }) => {
   return (
-    <Link href={url}>
-      <a className="px-2 pb-2" target='_blank'>{icon}</a>
+    <Link href={url} className="px-2 pb-2" target='_blank'>
+      {icon}
     </Link>
   );
 };

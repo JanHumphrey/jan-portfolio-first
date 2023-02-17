@@ -19,7 +19,7 @@ const NavlinkDesktop = ({
         }`}
     >
       <Link href={url}>
-        <a>{name}</a>
+        {name}
       </Link>
     </li>
   );
@@ -39,12 +39,14 @@ function Navbar() {
       <nav>
         {/* LOGO */}
         <div>
+          <Link href={"/"}>
           <Image
             width={57}
             height={57}
             src={"/assets/images/logo.svg"}
             alt="Jan Humphrey Logo"
           />
+          </Link>
         </div>
 
         {/* NAVIGATIONS */}
