@@ -1,3 +1,4 @@
+import NavbarMobile from "@/components/NavbarMobile"
 import Head from "next/head"
 import Image from "next/image"
 
@@ -12,6 +13,7 @@ function Projects() {
         <article>
           <h2>Building websites that are both functional and visually appealing is an art form. Let's dive into my collection of web development masterpieces.
           </h2>
+          <NavbarMobile/>
           <Image
           width={400}
           height={550}

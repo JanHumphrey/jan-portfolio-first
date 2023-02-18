@@ -1,3 +1,4 @@
+import NavbarMobile from "@/components/NavbarMobile"
 import Head from "next/head"
 import Image from "next/image"
 
@@ -13,6 +14,7 @@ function Experience() {
           <h2>
             "Where every project, every challenge, and every success has shaped who I am today."
           </h2>
+          <NavbarMobile/>
           <Image
             width={400}
             height={550}

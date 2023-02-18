@@ -1,5 +1,6 @@
 import BlogCards from '@/components/BlogCards';
 import Glasscard from '@/components/Glasscard';
+import NavbarMobile from '@/components/NavbarMobile';
 import ProjectCards from '@/components/ProjectCards';
 import Head from 'next/head'
 import Image from 'next/image'
@@ -37,6 +38,7 @@ function Home() {
         </div>
       </article>
       <div>
+        <NavbarMobile/>
         <Image
           width={400}
           height={550}

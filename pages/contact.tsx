@@ -1,12 +1,15 @@
+import NavbarMobile from "@/components/NavbarMobile"
 import Head from "next/head"
 
 function Contact() {
   return (
     <>
+    
     <Head>
       <title>Jan Humphrey - Contact</title>
     </Head>
       <section>
+      <NavbarMobile/>
         <div>
           <h1>Contact</h1>
         </div> 
