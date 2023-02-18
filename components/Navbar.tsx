@@ -10,7 +10,7 @@ import {
 } from "react-icons/ai";
 
 
-const NavlinkDesktop = ({
+const Navlink = ({
   name,
   url,
   isActive,
@@ -39,6 +39,41 @@ const SocialLink = ({ icon, url }: { icon: React.ReactNode; url: string }) => {
   );
 };
 
+const NavLinkContainer = ({ className, currentLink }: { className: string, currentLink: string }) => {
+  return (
+    <>
+      {/* DESKTOP NAVIGATIONS */}
+        <ul className={`${className} flex`}>
+          <Navlink
+            name="Home"
+            url="/"
+            isActive={currentLink === "/"}
+          />
+          <Navlink
+            name="About"
+            url="/about"
+            isActive={currentLink === "/about"}
+          />
+          <Navlink
+            name="Projects"
+            url="/projects"
+            isActive={currentLink === "/projects"}
+          />
+          <Navlink
+            name="Experience"
+            url="/experience"
+            isActive={currentLink === "/experience"}
+          />
+          <Navlink
+            name="Contact"
+            url="/contact"
+            isActive={currentLink === "/contact"}
+          />
+        </ul>
+    </>
+  )
+}
+
 
 function Navbar() {
   const [currentLink, setCurrentLink] = useState("");
@@ -63,36 +98,12 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* DESKTOP NAVIGATIONS */}
-        <div className="">
-          <ul className="flex space-x-20">
-            <NavlinkDesktop
-              name="Home"
-              url="/"
-              isActive={currentLink === "/"}
-            />
-            <NavlinkDesktop
-              name="About"
-              url="/about"
-              isActive={currentLink === "/about"}
-            />
-            <NavlinkDesktop
-              name="Projects"
-              url="/projects"
-              isActive={currentLink === "/projects"}
-            />
-            <NavlinkDesktop
-              name="Experience"
-              url="/experience"
-              isActive={currentLink === "/experience"}
-            />
-            <NavlinkDesktop
-              name="Contact"
-              url="/contact"
-              isActive={currentLink === "/contact"}
-            />
-          </ul>
-        </div>
+        <NavLinkContainer
+          className="hidden lg:flex flex-row lg:space-x-20"
+          currentLink={currentLink}
+        />
+
+
 
         <div className="">
           <ul className=" flex  flex-row content-evenly space-x-3">
@@ -135,6 +146,11 @@ function Navbar() {
 
           </ul>
         </div>
+
+        <NavLinkContainer
+          className="flex lg:hidden flex-col"
+          currentLink={currentLink}
+        />
       </nav>
     </>
   )
