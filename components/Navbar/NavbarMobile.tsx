@@ -14,7 +14,7 @@ const NavbarMobile = () => {
   return (
     <>
     <NavLinkContainer
-          className="flex lg:hidden flex-col"
+          className="flex lg:hidden flex-col font-hero2 uppercase "
           currentLink={currentLink}
         />
     </>

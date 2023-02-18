@@ -8,9 +8,8 @@ import {
   AiFillInstagram,
   AiFillGithub,
 } from "react-icons/ai";
+import ThemeIcon from "../ThemeIcon";
 import NavLinkContainer from "./NavLinkContainer";
-
-
 
 const SocialLink = ({ icon, url }: { icon: React.ReactNode; url: string }) => {
   return (
@@ -19,9 +18,6 @@ const SocialLink = ({ icon, url }: { icon: React.ReactNode; url: string }) => {
     </Link>
   );
 };
-
-
-
 
 function Navbar() {
   const [currentLink, setCurrentLink] = useState("");
@@ -53,13 +49,12 @@ function Navbar() {
 
 
 
-        <div className="">
+        
           <ul className=" flex  flex-row content-evenly space-x-3">
             <SocialLink
               icon={
                 <AiFillInstagram
                   size={35}
-
                 />
               }
               url="https://www.instagram.com/jnhmphry/"
@@ -68,7 +63,6 @@ function Navbar() {
               icon={
                 <AiFillGithub
                   size={35}
-
                 />
               }
               url="https://github.com/JanHumphrey"
@@ -77,7 +71,6 @@ function Navbar() {
               icon={
                 <AiFillFacebook
                   size={35}
-
                 />
               }
               url="https://www.facebook.com/JnHmphry/"
@@ -86,13 +79,14 @@ function Navbar() {
               icon={
                 <AiFillLinkedin
                   size={35}
-
                 />
               }
               url="https://www.linkedin.com/in/janhumphrey/"
             />
-
           </ul>
+        
+        <div>
+          <ThemeIcon/>
         </div>
 
         

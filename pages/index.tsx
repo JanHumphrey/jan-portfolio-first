@@ -14,22 +14,22 @@ function Home() {
       <title>Jan Humphrey - Software Developer</title>
     </Head>
     {/* HERO SECTION */}
-    <section className=''>
-      <article className="">
+    <section className='flex flex-col'>
+      <article className="order-3">
         <div>
-          <span>Jan</span>
+          <span className="font-hero">Jan</span>
         </div>
         <div>
-          <span>Humphrey</span>
+          <span className="font-hero2">Humphrey</span>
         </div>
         <div>
-          <span>FULL-STACK DEVELOPER | UI/UX DESIGNER | FREELANCER</span>
+          <span className='font-main'>FULL-STACK DEVELOPER | UI/UX DESIGNER | FREELANCER</span>
         </div>
         <div>
-          <h1>A passionate designer and programmer who promotes efficiency in every interactive design for your web identity.</h1>
+          <h1 className='font-main'>A passionate designer and programmer who promotes efficiency in every interactive design for your web identity.</h1>
         </div>
-        <div>
-          <Link href="/contact">
+        <div className='font-main2'>
+          <Link href="/contact" >
             Contact Me
           </Link>
           <Link href="/contact">
@@ -37,14 +37,22 @@ function Home() {
           </Link>
         </div>
       </article>
-      <div>
-        <NavbarMobile/>
-        <Image
-          width={400}
-          height={550}
-          src={"/assets/images/hero-image.png"}
-          alt="Jan Humphrey Salangsang" />
+      <div className='flex justify-center items-center'>
+        <div className='order-1 w-1/2 text-xl'>
+          <NavbarMobile />
+        </div>
+
+        <div className='order-2 w-1/2'>
+          <Image
+            width={400}
+            height={550}
+            src={"/assets/images/hero-image.png"}
+            alt="Jan Humphrey Salangsang" 
+            className='w-'
+            />
+        </div>
       </div>
+
     </section>
     {/* END HERO SECTION */}
 
