@@ -8,28 +8,9 @@ import {
   AiFillInstagram,
   AiFillGithub,
 } from "react-icons/ai";
+import NavLinkContainer from "./NavLinkContainer";
 
 
-const Navlink = ({
-  name,
-  url,
-  isActive,
-}: {
-  name: string;
-  url: string;
-  isActive: boolean;
-}) => {
-  return (
-    <li
-      className={`${isActive ? "font-bold" : "font-medium"
-        }`}
-    >
-      <Link href={url}>
-        {name}
-      </Link>
-    </li>
-  );
-};
 
 const SocialLink = ({ icon, url }: { icon: React.ReactNode; url: string }) => {
   return (
@@ -39,40 +20,7 @@ const SocialLink = ({ icon, url }: { icon: React.ReactNode; url: string }) => {
   );
 };
 
-const NavLinkContainer = ({ className, currentLink }: { className: string, currentLink: string }) => {
-  return (
-    <>
-      {/* DESKTOP NAVIGATIONS */}
-        <ul className={`${className} flex`}>
-          <Navlink
-            name="Home"
-            url="/"
-            isActive={currentLink === "/"}
-          />
-          <Navlink
-            name="About"
-            url="/about"
-            isActive={currentLink === "/about"}
-          />
-          <Navlink
-            name="Projects"
-            url="/projects"
-            isActive={currentLink === "/projects"}
-          />
-          <Navlink
-            name="Experience"
-            url="/experience"
-            isActive={currentLink === "/experience"}
-          />
-          <Navlink
-            name="Contact"
-            url="/contact"
-            isActive={currentLink === "/contact"}
-          />
-        </ul>
-    </>
-  )
-}
+
 
 
 function Navbar() {
@@ -147,10 +95,7 @@ function Navbar() {
           </ul>
         </div>
 
-        <NavLinkContainer
-          className="flex lg:hidden flex-col"
-          currentLink={currentLink}
-        />
+        
       </nav>
     </>
   )
