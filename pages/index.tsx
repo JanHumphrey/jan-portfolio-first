@@ -37,8 +37,8 @@ function Home() {
           </Link>
         </div>
       </article>
-      <div className='flex justify-center items-center'>
-        <div className='order-1 w-1/2 text-xl'>
+      <div className='flex items-center mt-2'>
+        <div className='flex order-1 w-1/2 text-xl justify-center space-x-5 '>
           <NavbarMobile />
         </div>
 
@@ -48,7 +48,7 @@ function Home() {
             height={550}
             src={"/assets/images/hero-image.png"}
             alt="Jan Humphrey Salangsang" 
-            className='w-'
+            className='w-36 mb-3'
             />
         </div>
       </div>
