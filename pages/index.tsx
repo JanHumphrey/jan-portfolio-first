@@ -1,4 +1,5 @@
-import  BlogCards from '@/components/BlogCards';
+import BlogCards from '@/components/BlogCards';
+import Glasscard from '@/components/Glasscard';
 import ProjectCards from '@/components/ProjectCards';
 import Head from 'next/head'
 import Image from 'next/image'
@@ -40,7 +41,7 @@ function Home() {
           width={400}
           height={550}
           src={"/assets/images/hero-image.png"}
-          alt="Jan Humphrey Salangsang"/>
+          alt="Jan Humphrey Salangsang" />
       </div>
     </section>
     {/* END HERO SECTION */}
@@ -50,9 +51,9 @@ function Home() {
       <div>
         <h2>Recent Projects</h2>
         <Link href="/projects">
-          
-            View All
-          
+
+          View All
+
         </Link>
       </div>
       <div>
@@ -80,9 +81,9 @@ function Home() {
       <div>
         <h2>Blog Post</h2>
         <Link href="/blogs">
-          
-            View All
-          
+
+          View All
+
         </Link>
       </div>
       <div>
@@ -105,6 +106,10 @@ function Home() {
           url="https://github.com/edmer664/JokesAPI"
         />
       </div>
+      <Glasscard
+        padding="72">
+        hatdog
+      </Glasscard>
     </section>
   </>;
 };

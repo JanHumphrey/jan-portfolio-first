@@ -2,6 +2,12 @@ import Image from "next/image"
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import {
+  AiFillLinkedin,
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillGithub,
+} from "react-icons/ai";
 
 
 const NavlinkDesktop = ({
@@ -15,13 +21,21 @@ const NavlinkDesktop = ({
 }) => {
   return (
     <li
-      className={`py-12 transition-all px-7 ${isActive ? "font-bold" : "font-medium"
+      className={`${isActive ? "font-bold" : "font-medium"
         }`}
     >
       <Link href={url}>
         {name}
       </Link>
     </li>
+  );
+};
+
+const SocialLink = ({ icon, url }: { icon: React.ReactNode; url: string }) => {
+  return (
+    <Link href={url} target='_blank'>
+      {icon}
+    </Link>
   );
 };
 
@@ -36,22 +50,22 @@ function Navbar() {
 
   return (
     <>
-      <nav>
+      <nav className="flex flex-wrap space-x-20  items-center  justify-center p-3">
         {/* LOGO */}
-        <div>
+        <div className="">
           <Link href={"/"}>
-          <Image
-            width={57}
-            height={57}
-            src={"/assets/images/logo.svg"}
-            alt="Jan Humphrey Logo"
-          />
+            <Image
+              width={57}
+              height={57}
+              src={"../assets/images/logo-dark.svg"}
+              alt="Jan Humphrey Logo"
+            />
           </Link>
         </div>
 
-        {/* NAVIGATIONS */}
-        <div>
-          <ul>
+        {/* DESKTOP NAVIGATIONS */}
+        <div className="">
+          <ul className="flex space-x-20">
             <NavlinkDesktop
               name="Home"
               url="/"
@@ -77,6 +91,48 @@ function Navbar() {
               url="/contact"
               isActive={currentLink === "/contact"}
             />
+          </ul>
+        </div>
+
+        <div className="">
+          <ul className=" flex  flex-row content-evenly space-x-3">
+            <SocialLink
+              icon={
+                <AiFillInstagram
+                  size={35}
+
+                />
+              }
+              url="https://www.instagram.com/jnhmphry/"
+            />
+            <SocialLink
+              icon={
+                <AiFillGithub
+                  size={35}
+
+                />
+              }
+              url="https://github.com/JanHumphrey"
+            />
+            <SocialLink
+              icon={
+                <AiFillFacebook
+                  size={35}
+
+                />
+              }
+              url="https://www.facebook.com/JnHmphry/"
+            />
+            <SocialLink
+              icon={
+                <AiFillLinkedin
+                  size={35}
+
+                />
+              }
+              url="https://www.linkedin.com/in/janhumphrey/"
+            />
+
           </ul>
         </div>
       </nav>
