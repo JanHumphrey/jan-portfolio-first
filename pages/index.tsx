@@ -1,6 +1,6 @@
 import BlogCards from '@/components/BlogCards';
 import Glasscard from '@/components/Glasscard';
-import NavbarMobile from '@/components/NavbarMobile';
+import NavbarMobile from '@/components/Navbar/NavbarMobile';
 import ProjectCards from '@/components/ProjectCards';
 import Head from 'next/head'
 import Image from 'next/image'

@@ -1,4 +1,4 @@
-import NavbarMobile from "@/components/NavbarMobile"
+import NavbarMobile from "@/components/Navbar/NavbarMobile"
 import Head from "next/head"
 
 function Contact() {
