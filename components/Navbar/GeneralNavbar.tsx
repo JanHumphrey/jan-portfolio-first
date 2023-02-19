@@ -29,7 +29,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex flex-wrap space-x-20  items-center  justify-center p-3">
+      <nav className="flex flex-wrap space-x-20  lg:space-x-60  items-center  justify-center p-3">
         {/* LOGO */}
         <div className="">
           <Link href={"/"}>
@@ -43,7 +43,7 @@ function Navbar() {
         </div>
 
         <NavLinkContainer
-          className="hidden lg:flex flex-row lg:space-x-20 font-hero2 uppercase"
+          className="hidden lg:flex flex-row lg:space-x-20 font-hero2 uppercase text-xl"
           currentLink={currentLink}
         />
 
