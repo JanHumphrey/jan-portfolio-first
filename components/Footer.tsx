@@ -18,11 +18,11 @@ const SocialLink = ({ icon, url }: { icon: React.ReactNode; url: string }) => {
 function Footer() {
   return (
     <>
-      <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
+      <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20 lg:py-2">
         {/* LINE HERE */}
         <div className="h-0.5 w-full bg-white dark:bg-gray-500"></div>
 
-        <div className="flex flex-row justify-between mt-2 mb-8">
+        <div className="flex flex-row justify-between mt-2 mb-8 ">
           <p className="font-main text-md">Jan Humphrey</p>
 
           <ul className="flex  flex-row content-evenly">
