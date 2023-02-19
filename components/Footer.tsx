@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {
   AiFillLinkedin,
-  AiFillTwitterSquare,
   AiFillFacebook,
   AiFillInstagram,
   AiFillGithub,
@@ -19,56 +18,55 @@ const SocialLink = ({ icon, url }: { icon: React.ReactNode; url: string }) => {
 function Footer() {
   return (
     <>
-      <div>
+      <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
         {/* LINE HERE */}
-        <div></div>
-        <div>
-          <div>
-            <p>Jan Humphrey</p>
-          </div>
-          <div>
-            <ul>
-              <SocialLink
-                icon={
-                  <AiFillInstagram
-                    size={35}
+        <div className="h-0.5 w-full bg-white dark:bg-gray-500"></div>
 
-                  />
-                }
-                url="https://www.instagram.com/jnhmphry/"
-              />
-              <SocialLink
-                icon={
-                  <AiFillGithub
-                    size={35}
+        <div className="flex flex-row justify-between mt-2 mb-8">
+          <p className="font-main text-md">Jan Humphrey</p>
 
-                  />
-                }
-                url="https://github.com/JanHumphrey"
-              />
-              <SocialLink
-                icon={
-                  <AiFillFacebook
-                    size={35}
+          <ul className="flex  flex-row content-evenly">
+            <SocialLink
+              icon={
+                <AiFillInstagram
+                  size={35}
 
-                  />
-                }
-                url="https://www.facebook.com/JnHmphry/"
-              />
-              <SocialLink
-                icon={
-                  <AiFillLinkedin
-                    size={35}
+                />
+              }
+              url="https://www.instagram.com/jnhmphry/"
+            />
+            <SocialLink
+              icon={
+                <AiFillGithub
+                  size={35}
 
-                  />
-                }
-                url="https://www.linkedin.com/in/janhumphrey/"
-              />
+                />
+              }
+              url="https://github.com/JanHumphrey"
+            />
+            <SocialLink
+              icon={
+                <AiFillFacebook
+                  size={35}
 
-            </ul>
-          </div>
+                />
+              }
+              url="https://www.facebook.com/JnHmphry/"
+            />
+            <SocialLink
+              icon={
+                <AiFillLinkedin
+                  size={35}
+
+                />
+              }
+              url="https://www.linkedin.com/in/janhumphrey/"
+            />
+
+          </ul>
         </div>
       </div>
+
     </>
   )
 }
