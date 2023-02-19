@@ -43,53 +43,53 @@ function Navbar() {
         </div>
 
         <NavLinkContainer
-          className="hidden lg:flex flex-row lg:space-x-20"
+          className="hidden lg:flex flex-row lg:space-x-20 font-hero2 uppercase"
           currentLink={currentLink}
         />
 
 
 
-        
-          <ul className=" flex  flex-row content-evenly space-x-3">
-            <SocialLink
-              icon={
-                <AiFillInstagram
-                  size={35}
-                />
-              }
-              url="https://www.instagram.com/jnhmphry/"
-            />
-            <SocialLink
-              icon={
-                <AiFillGithub
-                  size={35}
-                />
-              }
-              url="https://github.com/JanHumphrey"
-            />
-            <SocialLink
-              icon={
-                <AiFillFacebook
-                  size={35}
-                />
-              }
-              url="https://www.facebook.com/JnHmphry/"
-            />
-            <SocialLink
-              icon={
-                <AiFillLinkedin
-                  size={35}
-                />
-              }
-              url="https://www.linkedin.com/in/janhumphrey/"
-            />
-          </ul>
-        
+
+        <ul className=" flex  flex-row content-evenly space-x-3">
+          <SocialLink
+            icon={
+              <AiFillInstagram
+                size={35}
+              />
+            }
+            url="https://www.instagram.com/jnhmphry/"
+          />
+          <SocialLink
+            icon={
+              <AiFillGithub
+                size={35}
+              />
+            }
+            url="https://github.com/JanHumphrey"
+          />
+          <SocialLink
+            icon={
+              <AiFillFacebook
+                size={35}
+              />
+            }
+            url="https://www.facebook.com/JnHmphry/"
+          />
+          <SocialLink
+            icon={
+              <AiFillLinkedin
+                size={35}
+              />
+            }
+            url="https://www.linkedin.com/in/janhumphrey/"
+          />
+        </ul>
+
         <div>
-          <ThemeIcon/>
+          <ThemeIcon />
         </div>
 
-        
+
       </nav>
     </>
   )
