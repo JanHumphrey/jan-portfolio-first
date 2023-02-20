@@ -18,7 +18,7 @@ const SocialLink = ({ icon, url }: { icon: React.ReactNode; url: string }) => {
 function Footer() {
   return (
     <>
-      <div className=" px-4 py-10 md:py-20 lg:py-2 lg:px-24 lg:mb-9">
+      <div className=" px-4 py-10 md:py-20 lg:py-2 lg:px-24 lg:mb-9 inset-x-0 bottom-0">
         {/* LINE HERE */}
         <div className="h-0.5 w-full bg-white dark:bg-gray-500 lg:w-full"></div>
 
