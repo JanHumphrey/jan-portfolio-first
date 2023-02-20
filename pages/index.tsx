@@ -46,13 +46,16 @@ function Home() {
             </div>
           </div>
 
-          <div className='hidden md:block lg:block lg:items-start '>
+          <div className='relative hidden md:hidden lg:block lg:items-start mt-16'>
+            <div className='bg-gradient-to-tl from-black to-white p-4 w-[350px]'>
+              <span className="block h-[420px] bg-white"></span>
+            </div>
             <Image
               width={300}
               height={550}
               src={"/assets/images/hero-image.png"}
               alt="Jan Humphrey Salangsang"
-              className='w-48 mb-3 lg:w-auto '
+              className=' lg:w-auto -mt-[494px] ml-3 '
             />
           </div>
 
@@ -63,14 +66,22 @@ function Home() {
         <div className='flex order-1 w-1/2 text-xl justify-center space-x-5 '>
           <NavbarMobile />
         </div>
+
         <div className='order-2 w-1/2'>
-          <Image
-            width={400}
-            height={550}
-            src={"/assets/images/hero-image.png"}
-            alt="Jan Humphrey Salangsang"
-            className='w-36 mb-3'
-          />
+          
+          <div className='mt-5'>
+            <div className='bg-gradient-to-tl from-black to-white p-2 w-40 -ml-2'>
+              <span className="block h-[150px] bg-white "></span>
+            </div>
+            <Image
+              width={400}
+              height={550}
+              src={"/assets/images/hero-image.png"}
+              alt="Jan Humphrey Salangsang"
+              className='w-36 mb-3 -mt-[195px]'
+            />
+          </div>
+
         </div>
       </div>
 
@@ -81,8 +92,8 @@ function Home() {
     <section className=''>
       <div className='flex flex-row mt-32 px-7 justify-between font-main2 items-center lg:mx-auto lg:px-40'>
         <h2 className='text-4xl font-bold lg:ml-3 2xl:ml-14'>Recent Projects <span className='inline-block w-3 h-3 bg-violet-500 rounded-full'></span></h2>
-        <Link href="/projects" className='flex flex-row items-center  justify-center bg-black hover:bg-slate-800
-      text-white py-2 px-4 rounded-lg md:py-3 md:px-6 h-11 w-48 drop-shadow-md lg:mr-24 2xl:mr-36'>
+        <Link href="/projects" className='flex flex-row items-center  justify-center bg-black hover:bg-slate-800 text-white py-2 px-4 
+        rounded-lg md:py-3 md:px-6 h-11 w-48 drop-shadow-md lg:mr-24 2xl:mr-36'>
           <BsBoxArrowUpRight />  <span className='transition ml-2'>View All</span>
         </Link>
       </div>
@@ -112,7 +123,7 @@ function Home() {
     <section>
 
       <div className='flex flex-row mt-28 px-7 justify-between font-main2 items-center lg:mx-auto lg:px-40'>
-        <h2 className='text-4xl font-bold pr-24 lg:ml-3 2xl:ml-14'>Blog Post <span className='inline-block w-3 h-3 bg-violet-500 rounded-full'></span></h2>
+        <h2 className='text-4xl font-bold pr-20 lg:ml-3 2xl:ml-14'>Blog Post <span className='inline-block w-3 h-3 bg-violet-500 rounded-full'></span></h2>
         <Link href="/blogs" className='flex flex-row items-center  justify-center bg-black hover:bg-slate-800 text-white py-2 px-4 
         rounded-lg md:py-3 md:px-6 h-11 w-48 drop-shadow-md lg:mr-24 2xl:mr-36'>
           <BsBoxArrowUpRight /> <span className='transition ml-2'>View All</span>
