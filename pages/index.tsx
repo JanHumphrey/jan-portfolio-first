@@ -91,7 +91,7 @@ function Home() {
     {/* RECENT PROJECTS */}
     <section className=''>
       <div className='flex flex-row mt-32 px-7 justify-between font-main2 items-center lg:mx-auto lg:px-40'>
-        <h2 className='text-4xl font-bold lg:ml-3 2xl:ml-14'>Recent Projects <span className='inline-block w-3 h-3 bg-violet-500 rounded-full'></span></h2>
+        <h2 className='text-4xl font-bold 2xl:ml-10'>Recent Projects <span className='inline-block w-3 h-3 bg-violet-500 rounded-full'></span></h2>
         <Link href="/projects" className='flex flex-row items-center  justify-center bg-black hover:bg-slate-800 text-white py-2 px-4 
         rounded-lg md:py-3 md:px-6 h-11 w-48 drop-shadow-md lg:mr-24 2xl:mr-36'>
           <BsBoxArrowUpRight />  <span className='transition ml-2'>View All</span>
@@ -123,7 +123,7 @@ function Home() {
     <section>
 
       <div className='flex flex-row mt-28 px-7 justify-between font-main2 items-center lg:mx-auto lg:px-40'>
-        <h2 className='text-4xl font-bold pr-20 lg:ml-3 2xl:ml-14'>Blog Post <span className='inline-block w-3 h-3 bg-violet-500 rounded-full'></span></h2>
+        <h2 className='text-4xl font-bold pr-20 2xl:ml-10'>Blog Post <span className='inline-block w-3 h-3 bg-violet-500 rounded-full'></span></h2>
         <Link href="/blogs" className='flex flex-row items-center  justify-center bg-black hover:bg-slate-800 text-white py-2 px-4 
         rounded-lg md:py-3 md:px-6 h-11 w-48 drop-shadow-md lg:mr-24 2xl:mr-36'>
           <BsBoxArrowUpRight /> <span className='transition ml-2'>View All</span>
