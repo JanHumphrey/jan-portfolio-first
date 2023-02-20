@@ -25,7 +25,7 @@ function Home() {
 
             <div className='relative flex flex-col '>
               <span className="absolute font-hero text-9xl uppercase lg:text-[225px]">Jan</span>
-              <span className=" font-hero2 text-7xl uppercase mt-28 lg:mt-56 lg:text-[125px]">Humphrey</span>
+              <span className=" font-hero2 text-7xl uppercase mt-28 lg:mt-56 lg:text-[140px]">Humphrey</span>
             </div>
 
             <div>
@@ -47,7 +47,7 @@ function Home() {
           </div>
 
           <div className='relative hidden md:hidden lg:block lg:items-start mt-16'>
-            <div className='bg-gradient-to-tl from-black to-white p-4 w-[350px]'>
+            <div className='bg-gradient-to-tl from-zinc-400 to-black p-4 w-[350px]'>
               <span className="block h-[420px] bg-white"></span>
             </div>
             <Image
@@ -71,7 +71,7 @@ function Home() {
         <div className='order-2 w-1/2'>
           
           <div className='mt-5'>
-            <div className='bg-gradient-to-tl from-black to-white p-2 w-40 -ml-2'>
+            <div className='bg-gradient-to-tl from-zinc-400 to-black p-2 w-40 -ml-2'>
               <span className="block h-[150px] bg-white "></span>
             </div>
             <Image
