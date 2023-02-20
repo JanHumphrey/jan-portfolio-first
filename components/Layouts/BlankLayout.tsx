@@ -4,7 +4,7 @@ import Navbar from "../Navbar/GeneralNavbar"
 
 export const BlankLayout= ({children}: {children: React.ReactNode}) => {
   return (
-    <div>
+    <div className="flex flex-col max-w-screen-2xl mx-auto">
       <Navbar />
       {children}
       <Footer />
