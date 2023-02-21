@@ -11,7 +11,7 @@ const Navlink = ({
 }) => {
   return (
     <li
-      className={`flex justify-end ${isActive ?  "font-bold" : "font-medium"
+      className={`flex justify-end transition hover:font-semibold ${isActive ?  "font-bold" : "font-medium"
         }`}
     >
       <Link href={url}>
