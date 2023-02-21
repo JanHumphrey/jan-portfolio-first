@@ -23,14 +23,13 @@ function Footer() {
         <div className="h-0.5 w-full bg-white dark:bg-gray-500 lg:w-full"></div>
 
         <div className="flex flex-row justify-between mt-2 mb-8 ">
-          <p className="font-main text-md ml-4">Jan Humphrey</p>
+          <p className="font-main text-md ml-4">Jan Humphrey Salangsang</p>
 
           <ul className="flex  flex-row content-evenly">
             <SocialLink
               icon={
                 <AiFillInstagram
                   size={35}
-
                 />
               }
               url="https://www.instagram.com/jnhmphry/"
@@ -39,7 +38,6 @@ function Footer() {
               icon={
                 <AiFillGithub
                   size={35}
-
                 />
               }
               url="https://github.com/JanHumphrey"
@@ -48,7 +46,6 @@ function Footer() {
               icon={
                 <AiFillFacebook
                   size={35}
-
                 />
               }
               url="https://www.facebook.com/JnHmphry/"
