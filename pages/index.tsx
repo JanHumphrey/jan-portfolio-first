@@ -38,10 +38,10 @@ function Home() {
 
             <div className='font-main2 flex flex-row space-x-5 justify-center lg:w-[500px] lg:justify-start '>
               <Link href="/contact" className='transition flex flex-row items-center  justify-center bg-black hover:bg-slate-800 text-white py-2 px-4 rounded-lg md:py-3 md:px-6 h-11 w-48 drop-shadow-md'>
-                <CiMail /><span className='ml-2'>Contact Me</span>
+                <CiMail className='text-2xl'/><span className='ml-2'>Contact Me</span>
               </Link>
               <Link href="/contact" className='transition flex flex-row items-center justify-center  bg-slate-200 hover:bg-slate-300 text-black py-2 px-4 rounded-lg md:py-3 md:px-6 h-11 w-56 drop-shadow-md'>
-                <BiCalendar /><span className='ml-2'>Book a Meeting</span>
+                <BiCalendar className='text-2xl'/><span className='ml-2'>Book a Meeting</span>
               </Link>
             </div>
           </div>
